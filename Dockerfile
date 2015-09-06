@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.2
+FROM alpine:3.2
 MAINTAINER Andrew Dunham <andrew@du.nham.ca>
 
 # Add binary and init script
@@ -13,7 +13,7 @@ RUN mkdir -p /usr/local/bin && \
     echo "Copying init" && \
     chown root:root /init && \
     chmod +x /init && \
-    mv /thttpd /usr/local/bin/
+    mv /init /usr/local/bin/
 
 # Put data files to be served here.
 VOLUME ["/data"]
