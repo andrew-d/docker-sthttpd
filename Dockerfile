@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.1
+FROM gliderlabs/alpine:3.2
 MAINTAINER Andrew Dunham <andrew@du.nham.ca>
 
 # Add binary and init script
